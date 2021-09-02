@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'LifeCraft';
+    src: url('../assets/fonts/LifeCraft_Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: url('../assets/images/torghast-concept.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#wrapper{
+    margin: auto;
+    max-width: 1080px;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Anton', sans-serif;
+    color: rgb(228, 228, 228);
+    line-height: normal;
+}
+h1{
+    font-size: 4rem;
+}
+
+main{
+
+}
+
+main > *{
+    color: rgb(228, 228, 228);
+}
+
+
+
+.hero{
+    text-align: center;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: -4rem;
+}
+
+.subtitle{
+    padding: 0;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.avatar{
+    margin: auto;
+    max-height: auto;
+    max-width: 25%;
+    border-radius: 25%;
+}
+
+.hero p{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgba(204, 204, 204, 0.87);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.grid2col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+    padding-inline-start: 0;
+  }
+
+
+  ol li{
+      text-align: center;
+      margin: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: rgba(51, 51, 51, 0.575);
+      border: solid rgba(204, 204, 204, 0.664) 1px;
+      border-radius: 10px;
+  }
+
+  ol li:hover{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgba(51, 51, 51, 0.575);
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 10px;
+}
+
+.armoryLink{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    text-decoration-line: none;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: solid white 1px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #353F58;
+    max-width: 200px;
+}
+
+.armoryLink:hover{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    text-decoration-line: none;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: solid white 1px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #3f5691;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .grid2col {
+      grid-template-columns: 1fr;
+    }
+  }
